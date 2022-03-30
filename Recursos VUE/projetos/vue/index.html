@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    Test
+    <div id="app">
+        {{mensagem}}
+        <br>
+        Valor Total: {{valorTotal}}
+        <br>
+        logado: {{logado}}
+        Hobbies:  {{hobbies[2]}}
+        <br>
+        Perfil:{{perfil.nome}}
+        <br>
+
+    </div>
+
+    <script>
+        optoins =  {
+            el:'#app',
+            data: { // variaveis reactivos
+                mensagem: 'Primeiro Template',
+                valorTotal: 150.45,
+                logado: false,
+                hobbies: [
+                    'Dormir',
+                    'Jogar'
+                ],
+                perfil: {
+                    nome: 'Luiz',
+                    idade: 24
+                },
+                cursos: [
+                    {nome: 'Java', cargaHorario: '50 Horas'},
+                    {nome: 'SQL', cargaHorario: '500 Horas'},
+                ]
+            }
+        }
+    const vm = new Vue(optoins); //vm ViewModel
+    console.log(vm);
+    </script>
+
+</body>
+</html>
