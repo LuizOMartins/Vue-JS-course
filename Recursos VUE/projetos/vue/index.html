@@ -17,22 +17,25 @@
 </head>
 <body>
     <div id="app">
-        {{2 + 2}}
-        <input type="text" :value="2+2" :class="test ? 'vermelho' : estilo">
+        
+        <input type="text" v-on:keyup="imprimirTexto()">
     </div>
 
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-                mensagem: 2+2,
-                estilo: 'azul',
-                test: false
              },
-            methods:{}
+            methods:{
+                imprimirTexto() {
+                    console.log('Test');
+                },
+                mensagemAlerta(){
+                    alert('Mensagem de alerta');
+                }
+
+            }
         });
-    
-        console.log(vm);
     </script>
 </body>
 </html>

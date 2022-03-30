@@ -11,3 +11,4 @@ CLI: command line interface
 Arrow Function (faz referencia ao escopo global ou de função ao utilizar o this)
 
 
+Manipulação de eventos:
