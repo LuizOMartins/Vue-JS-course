@@ -10,36 +10,35 @@
 <body>
     Test
     <div id="app">
-        {{somar(4,2)}}
+        {{somar()}}
         <br>
-        {{subtrair(4,2)}}
+        {{subtrair()}}
         <br>
-        {{multiplicar(4,2)}}
+        {{multiplicar()}}
         <br>
-        {{dividir(4,2)}}
-        <br>
-        {{numeroAleatorio()}}
+        {{dividir()}}
     </div>
 
     <script>
         optoins =  {
             el:'#app',
-            data: { },
+            data: {
+                val1: 10,
+                val2: 5
+        
+             },
             methods:{
-                somar: function somar(valor1, valor2){
-                    return valor1+valor2;
+                somar: function somar(){
+                    return this.val1+this.val2;
                 },
-                subtrair: function (val1, val2){
-                   return val1-val2;
+                subtrair: function (){
+                   return this.val1-this.val2;
                 },
-                multiplicar: (val1, val2) => {
-                    return val1* val2;
+                multiplicar: () => {
+                    return this.val1* this.val2;
                 },
-                dividir(val1,val2){
-                    return val1 / val2;                    
-                }, 
-                numeroAleatorio: function numeroAleatorio(){
-                    return Math.random();
+                dividir(){
+                    return this.val1 / this.val2;                    
                 }
 
             }
@@ -47,6 +46,5 @@
     const vm = new Vue(optoins); //vm ViewModel
     console.log(vm);
     </script>
-
 </body>
 </html>

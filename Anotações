@@ -6,5 +6,7 @@ Vetur
 live Server
 
 
+git config --global user.email "luidigastech@gmail.com"
 
 CLI: command line interface
+
