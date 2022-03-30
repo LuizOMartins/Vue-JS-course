@@ -6,44 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./vue.js"></script>
+    <style>
+        .vermelho{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    Test
     <div id="app">
-        {{somar()}}
-        <br>
-        {{subtrair()}}
-        <br>
-        {{multiplicar()}}
-        <br>
-        {{dividir()}}
+        <a v-bind:href="site"> Site</a>
+        <p v-bind:class="cor">Entendendo a diretiva v-bind</p>
+        <input  v-bind:placeholder="placeholder" type="text" v-bind:value="valor">
+        <input type="checkbox" v-bind:checked="check">
     </div>
 
     <script>
-        optoins =  {
+       const vm = new Vue({
             el:'#app',
             data: {
-                val1: 10,
-                val2: 5
-        
+                site: 'https://google.com.br',
+                cor: 'vermelho',
+                placeholder: 'Insira os dados',
+                valor: 'Entendo o v-bind',
+                check:true
              },
             methods:{
-                somar: function somar(){
-                    return this.val1+this.val2;
-                },
-                subtrair: function (){
-                   return this.val1-this.val2;
-                },
-                multiplicar: () => {
-                    return this.val1* this.val2;
-                },
-                dividir(){
-                    return this.val1 / this.val2;                    
-                }
+                 
 
             }
-        }
-    const vm = new Vue(optoins); //vm ViewModel
+        });
+    
     console.log(vm);
     </script>
 </body>
