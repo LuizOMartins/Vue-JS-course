@@ -14,10 +14,10 @@
 </head>
 <body>
     <div id="app">
-        <a v-bind:href="site"> Site</a>
-        <p v-bind:class="cor">Entendendo a diretiva v-bind</p>
-        <input  v-bind:placeholder="placeholder" type="text" v-bind:value="valor">
-        <input type="checkbox" v-bind:checked="check">
+        <a :href="site" href=""> Site</a>
+        <p :class="cor" class="verde" >Entendendo a diretiva v-bind</p>
+        <input  :placeholder="placeholder" type="text" :value="valor">
+        <input type="checkbox" :checked="check">
     </div>
 
     <script>
