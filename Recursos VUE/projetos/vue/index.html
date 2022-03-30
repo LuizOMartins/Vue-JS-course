@@ -10,33 +10,29 @@
         .vermelho{
             color: red;
         }
+        .azul{
+            color: blue
+        }
     </style>
 </head>
 <body>
     <div id="app">
-        <a :href="site" href=""> Site</a>
-        <p :class="cor" class="verde" >Entendendo a diretiva v-bind</p>
-        <input  :placeholder="placeholder" type="text" :value="valor">
-        <input type="checkbox" :checked="check">
+        {{2 + 2}}
+        <input type="text" :value="2+2" :class="test ? 'vermelho' : estilo">
     </div>
 
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-                site: 'https://google.com.br',
-                cor: 'vermelho',
-                placeholder: 'Insira os dados',
-                valor: 'Entendo o v-bind',
-                check:true
+                mensagem: 2+2,
+                estilo: 'azul',
+                test: false
              },
-            methods:{
-                 
-
-            }
+            methods:{}
         });
     
-    console.log(vm);
+        console.log(vm);
     </script>
 </body>
 </html>
