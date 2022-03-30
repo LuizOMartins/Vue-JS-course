@@ -10,37 +10,38 @@
 <body>
     Test
     <div id="app">
-        {{mensagem}}
+        {{somar(4,2)}}
         <br>
-        Valor Total: {{valorTotal}}
+        {{subtrair(4,2)}}
         <br>
-        logado: {{logado}}
-        Hobbies:  {{hobbies[2]}}
+        {{multiplicar(4,2)}}
         <br>
-        Perfil:{{perfil.nome}}
+        {{dividir(4,2)}}
         <br>
-
+        {{numeroAleatorio()}}
     </div>
 
     <script>
         optoins =  {
             el:'#app',
-            data: { // variaveis reactivos
-                mensagem: 'Primeiro Template',
-                valorTotal: 150.45,
-                logado: false,
-                hobbies: [
-                    'Dormir',
-                    'Jogar'
-                ],
-                perfil: {
-                    nome: 'Luiz',
-                    idade: 24
+            data: { },
+            methods:{
+                somar: function somar(valor1, valor2){
+                    return valor1+valor2;
                 },
-                cursos: [
-                    {nome: 'Java', cargaHorario: '50 Horas'},
-                    {nome: 'SQL', cargaHorario: '500 Horas'},
-                ]
+                subtrair: function (val1, val2){
+                   return val1-val2;
+                },
+                multiplicar: (val1, val2) => {
+                    return val1* val2;
+                },
+                dividir(val1,val2){
+                    return val1 / val2;                    
+                }, 
+                numeroAleatorio: function numeroAleatorio(){
+                    return Math.random();
+                }
+
             }
         }
     const vm = new Vue(optoins); //vm ViewModel
