@@ -6,49 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./vue.js"></script>
-    <style>
-        .vermelho{
-            background-color: red;
-        }
-        .azul{
-            background-color: blue;
-        }
-        .verde{
-            background-color: green;
-        }
-        .branco{
-            background-color: white;
-        }
-        .borda{
-            border: 1px solid
-        }
-        .div-principal{
-            width: 200px;
-            height: 200px;
-        }
-        .div-comum{
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-
-        }
-    </style>
 </head>
 <body>
     <div id="app">
-        <button @click="exibirSaldo = !exibirSaldo">Exibir Saldo</button>
-        <p>Saldo: <span v-if="exibirSaldo">RS$ {{ saldo }}</span></p>
+        Idade <input type="text" id="inputIdade" @blur="setIdade()">
+        <p v-if="idade  < 18" > Menor de Idade</p>
+        <p v-else> Maior de Idade</p>
     </div>
-
+    
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-               saldo: 456.34,
-               exibirSaldo: false
+               idade: 0
              },
             methods:{
-                
+                setIdade(){
+                    this.idade =  inputIdade.value;
+                }
             }
         });
     </script>
