@@ -36,29 +36,18 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" id="inputTexto">
-        <br>
-        <select name="" id="opcoes">
-            <option value="A">1</option>
-            <option value="B">2</option>
-            <option value="B">3</option>
-
-        </select>
-        <br>
-        <p id="paragrafo" style="color: red;">Parágrafo</p>
-        <button @click="selecionarElementoFilho()" >Botão</button>
+        <button @click="exibirSaldo = !exibirSaldo">Exibir Saldo</button>
+        <p>Saldo: <span v-if="exibirSaldo">RS$ {{ saldo }}</span></p>
     </div>
 
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-                
+               saldo: 456.34,
+               exibirSaldo: false
              },
             methods:{
-                selecionarElementoFilho(){
-                    console.log(paragrafo.innerHTML);
-                }
                 
             }
         });
