@@ -36,48 +36,28 @@
 </head>
 <body>
     <div id="app">
-        <a href="https://google.com.br" target="_blank" @click.prevent="prevenirComportamentoPadrao()">
-            Link
-        </a>
-        Mensagem: {{msg}}
+        <input type="text" id="inputTexto">
         <br>
-        <button @click.once="executarUmaVez()">Botão</button>
-        <p>Cliques {{cliques}}</p>
-        <br>
+        <select name="" id="opcoes">
+            <option value="A">1</option>
+            <option value="B">2</option>
+            <option value="B">3</option>
 
-        <form @submit.prevent.once="prevenirUmaVez()">
-            <button type="submit" >Enviar</button>
-            <p>Formulario {{formularios}}</p>
-        </form>
-
-        <hr>
-        <input type="text" @keyup.x="capturandoTeclas($event)" >
-        <p>Teclas: {{teclas}}</p>
+        </select>
+        <button @click="selecionarElementoFilho()" >Botão</button>
     </div>
 
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-                msg:'',
-                cliques: 0,
-                formularios: '',
-                teclas: ''
+                
              },
             methods:{
-                prevenirComportamentoPadrao(){
-                    this.msg = 'Comportamento Padrão ativado.'
-                },
-                executarUmaVez(){
-                    this.cliques++;
-                },
-                prevenirUmaVez(){  
-                    this.formularios = 'Prevenindo o comportamento padrão';
-
-                },
-                capturandoTeclas(event){
-                    this.teclas += event.key
+                selecionarElementoFilho(){
+                    console.log(opcoes.value);
                 }
+                
             }
         });
     </script>
