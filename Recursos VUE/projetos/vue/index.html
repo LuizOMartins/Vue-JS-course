@@ -44,6 +44,8 @@
             <option value="B">3</option>
 
         </select>
+        <br>
+        <p id="paragrafo" style="color: red;">Parágrafo</p>
         <button @click="selecionarElementoFilho()" >Botão</button>
     </div>
 
@@ -55,7 +57,7 @@
              },
             methods:{
                 selecionarElementoFilho(){
-                    console.log(opcoes.value);
+                    console.log(paragrafo.innerHTML);
                 }
                 
             }
