@@ -10,7 +10,7 @@ Usando Extensao Live Server
 | Vetur| Extensao Vetur para facilidade com Vue|
 ## Conteudos
 | Manipulação de eventos||
-| ------ ||
+| ------ | ------ |
 | Manipulação de eventos ||
 | Implementando modificadores||
 | Renderizando elementos condicionalmente|  Para if;else if;else precisa estar no mesmo nivel|
