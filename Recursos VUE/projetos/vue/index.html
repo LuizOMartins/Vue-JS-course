@@ -9,16 +9,27 @@
 </head>
 <body>
     <div id="app">
-        <div v-text="texto">Exemplo Estatico</div>
+        <p v-once>Saldo inicia {{saldo}}</p>
+        <p>Saldo atualizado {{saldo}}</p>
+        <input type="text" id="valor">
+        <button @click="creditar()">Creditar</button>
+        <button @click="debitar()">Debitar</button>
     </div>
     
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-                texto:  'Conteudo'
+                saldo:  1100
              },
             methods:{
+                creditar(){
+                    this.saldo += parseFloat(valor.value) 
+                },
+                debitar(){
+                    this.saldo -= parseFloat(valor.value) 
+                }
+
             }
         });
     </script>

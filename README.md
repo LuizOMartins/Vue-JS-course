@@ -17,6 +17,7 @@ Usando Extensao Live Server
 | Renderizando elementos condicionalmente|  v-show, processamento mais rapido, porem deixa elemento no DOM |
 | Injeção  de  HTML| v-html,  substitui o conteudo ja existente   |
 | Insetindo texto| v-text,  substitui o conteudo ja existente |
+| v-once| faz com que elementos HTML sejam renderizados apenas uma vez |
 
 ## Informações
 CLI: command line interface
