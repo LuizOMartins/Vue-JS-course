@@ -9,14 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <div v-html="elementosHTML">Exemplo Estatico</div>
+        <div v-text="texto">Exemplo Estatico</div>
     </div>
     
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-                elementosHTML:  '<p>Conteudo</p>'
+                texto:  'Conteudo'
              },
             methods:{
             }
