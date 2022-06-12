@@ -18,6 +18,7 @@ Usando Extensao Live Server
 | Injeção  de  HTML| v-html,  substitui o conteudo ja existente   |
 | Insetindo texto| v-text,  substitui o conteudo ja existente |
 | v-once| faz com que elementos HTML sejam renderizados apenas uma vez |
+| v-for| laços de repetição |
 
 ## Informações
 CLI: command line interface
