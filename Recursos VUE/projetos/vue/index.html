@@ -9,21 +9,16 @@
 </head>
 <body>
     <div id="app">
-        Idade <input type="text" id="inputIdade" @blur="setIdade()">
-        <p v-if="idade  < 18" > Menor de Idade</p>
-        <p v-else> Maior de Idade</p>
+        <div v-html="elementosHTML">Exemplo Estatico</div>
     </div>
     
     <script>
        const vm = new Vue({
             el:'#app',
             data: {
-               idade: 0
+                elementosHTML:  '<p>Conteudo</p>'
              },
             methods:{
-                setIdade(){
-                    this.idade =  inputIdade.value;
-                }
             }
         });
     </script>
