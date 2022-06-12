@@ -21,6 +21,7 @@ Usando Extensao Live Server
 | v-for| laços de repetição |
 | v-for| destructuring assingment |
 | v-for| :key - identificador de cada elemento |
+| v-for| usando push/pop/ this.$set  (avisa o vue para atualizar no DOM) |
 
 ## Informações
 CLI: command line interface
@@ -48,3 +49,12 @@ alert(title);  // Menu
 alert(width);  // 100
 alert(height); // 200
 ```
+
+
+*  [x] $set VUE
+- https://br.vuejs.org/v2/guide/reactivity.html
+- avisa o vue sobre a alteração
+
+
+-  tag templade:
+-- tag template nao é  renderizada
