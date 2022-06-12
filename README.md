@@ -20,6 +20,7 @@ Usando Extensao Live Server
 | v-once| faz com que elementos HTML sejam renderizados apenas uma vez |
 | v-for| laços de repetição |
 | v-for| destructuring assingment |
+| v-for| :key - identificador de cada elemento |
 
 ## Informações
 CLI: command line interface
