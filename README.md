@@ -14,6 +14,7 @@ Usando Extensao Live Server
 | Manipulação de eventos ||
 | Implementando modificadores||
 | Renderizando elementos condicionalmente|  Para if;else if;else precisa estar no mesmo nivel|
+| Renderizando elementos condicionalmente|  v-show, processamento mais rapido, porem deixa elemento no DOM |
 
 ## Informações
 CLI: command line interface
