@@ -19,6 +19,7 @@ Usando Extensao Live Server
 | Insetindo texto| v-text,  substitui o conteudo ja existente |
 | v-once| faz com que elementos HTML sejam renderizados apenas uma vez |
 | v-for| laços de repetição |
+| v-for| destructuring assingment |
 
 ## Informações
 CLI: command line interface
@@ -26,3 +27,8 @@ Arrow Function (faz referencia ao escopo global ou de função ao utilizar o thi
 
 ## Configurações
 git config --global user.email "luidigastech@gmail.com"
+
+
+## Conteudos estudo
+
+*  [x] destructuring assingment
