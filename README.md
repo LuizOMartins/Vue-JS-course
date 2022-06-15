@@ -50,7 +50,6 @@ alert(width);  // 100
 alert(height); // 200
 ```
 
-
 *  [x] $set VUE
 - https://br.vuejs.org/v2/guide/reactivity.html
 - avisa o vue sobre a alteração
