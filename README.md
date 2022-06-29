@@ -22,6 +22,7 @@ Usando Extensao Live Server
 | v-for| destructuring assingment |
 | v-for| :key - identificador de cada elemento |
 | v-for| usando push/pop/ this.$set  (avisa o vue para atualizar no DOM) |
+| computed <meotodos>|  |
 
 ## Informações
 CLI: command line interface
